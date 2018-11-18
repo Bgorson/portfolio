@@ -1,0 +1,18 @@
+*/ {
+    box-sizing: border-box;
+}
+.container {
+    background-color: white;
+
+}
+body {
+    background-color:lightgray;
+    display: inline;
+}
+#name {
+    background-color: lightskyblue;
+    float:left;
+}
+#navlinks {
+    float:right;
+}
