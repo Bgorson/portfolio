@@ -1,0 +1,58 @@
+*/ {
+    box-sizing: border-box;
+}
+
+#header {
+ 
+}
+#navlinks {
+    float:right;
+}
+#myname {
+    background-color: lightskyblue;
+    float:left;
+}
+ul {
+    list-style-type:none;
+    /* margin-top:20px;
+    margin-left:20px;
+    margin-right:20px; */
+    margin:auto;
+    padding:0;
+    overflow:hidden;
+    margin-top: 10px;
+    width:960px;
+    background-color:white;
+    
+ }
+li {
+    display: block;
+    float: right;
+    color:grey;
+    padding:14px 20px;
+    text-decoration:none;
+}
+#name {
+    float:left;
+    background-color: darkslategrey;
+    color: white;
+}
+
+.container {
+    background-color: white;
+    width:960px;
+    margin:auto;
+
+}
+body {
+    background-color:lightgray;
+    margin:0;
+    }
+
+footer {
+    text-align:center;
+    border-top: 4px solid aqua;
+    background-color: grey;
+    width: 960px;
+    margin:auto;
+}
