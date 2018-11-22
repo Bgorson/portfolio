@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   
 </head>
-<div id = topribbon>
+<div class = topribbon>
 <h2 id = "name">Brandon Gorson</h2>
   <ul>
         <li><a href="contact.html">Contact</a></li>
@@ -19,20 +19,36 @@
 
 <body>
 
-  <div class="container">
 
-    <section id="contact">
 
-      <h2 id = "title">Contact</h2>
-      <hr/>
+      <div class="container">
+          <h2 id = "title">Contact</h2>
+          <hr/>
+          <form action="action_page.php">
+
+              <label for="formname">Name</label>
+              <input type="text" id="formname" name="formname" placeholder="Name">
+          
+              <label for="email">Email</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Email">
+          
+
+              </select>
+          
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
       
       
     </section>
   </div>
-    <footer>
-      Copyright &copy;
-    </footer>
 
+    <div class="footer">
+      Copyright &copy;
+      </div>
 
 
 </body>
