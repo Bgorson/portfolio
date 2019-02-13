@@ -1,177 +1,184 @@
-*/ {
-    box-sizing: border-box;
-}
-
-
-ul, .container, footer {
-  font-family: Arial, Helvetica, sans-serif;
-}
-h2, h1, #name, #title {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.topribbon { 
-    background-color:white;
-    height:60px;
-    width:100%;
-   
-    border-bottom: 1px solid #666666;
-    }
-
-h2 {
-    color: #4AAAA5;
-}
-#title {
-    margin-left:45px;
-    padding-top:10px;
-}
-ul {
-    list-style-type:none;
-    margin:20px 200px 0 0;
-    padding:0;
-    width: 400px;
-    background-color:white;
-    float: right;
-    
- }
-
- #profile {
-     width:200px;
-     float: left;
-     margin-top: 30px;
-     margin-left:30px;
-     margin-right:10px;
- }
- a {
-    text-decoration: none;
- }
- p {
-     margin-top:25px;
-     margin-left:20px;
-     margin-right:10px;
-     line-height:30px;
- }
-li {
-    float: right;
-    color:#999EBA;
-    padding:0px 20px;
-    text-decoration:none;
-    margin: 10px 5px;
-}
-
-#name {
-    float:left;
-    background-color: #4AAAA5;
-    color: white;
-    margin: 24px 0 0 10%;
-    padding:0 20px 0 0;
-    height:35px;   
-}
-
-.container {
-   
-    width:960px;
-    margin:auto;
-    margin-top: 50px;
-    padding: 0 0 20px 0;
-    height:82%;
-
+html {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background: url(../images/background.png);
-    margin:0;
-    height: 100%;
-    position: relative;
-    
-    }
-#aboutme {
-    padding-bottom:10px;
-    margin-bottom:20px;
-    background-color: white;    
-    height:400px;
+  background-color: rgb(4,5,7)
 }
 
-.footer {
-    text-align:center;
-    border-top: 4px solid #4AAAA5;
-    background-color:#666666;
-    width: 100%;
-    height:50px;
-    margin:0 0 0 0;
-    
-    color: white;
-    line-height: 50px; 
+/* Style the navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #545F66;
+  opacity: .5;
 }
-hr {
+
+/* Navbar links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #D0F4EA;
+  text-align: center;
+  padding: 2vw;
+  text-decoration: none;
+  font-size:18px;
+}
+.topnav a:hover {
+  background-color: #95A3B3;
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+ .content {
+  padding-top: 60px;
+}
+
+
+#splash {
+  max-width: 100%;
+  height: 60vw;
+  background-image: url("../images/splash.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+
+}
+
+.aboutContainer {
+  position: relative;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.centeredText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10vw;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+  padding-top: 5em;
+
+}
+
+.column {
+  
+  margin: auto;
+  max-width: 80%;
+  color: #D0F4EA;
+  font-size: 20px;
+}
+
+.responsiveImage {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+ 
+}
+.roundedImage {
+  border-radius: 25px;
+}
+
+#directContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: wrap;
+  max-width: 100%;
+  
+}
+
+ul {
+  display: inline-block;
+}
+
+#contact{
+  margin-top:5em;
+}
+
+#portfolioHeader{
+  margin-top:2em;
+  font-size: 90px;
+  text-align: center;
+  padding:2vw;
+  color: #D0F4EA
+}
+#directContact{
+  font-size:60px;
+  color: #84DCC6
+}
+i {
+  margin:2vw;
+  text-decoration: none;
+  color:#FFFFFF
+}
+#portfolio {
+  vertical-align: top;
+}
+p{
+  color: #D0F4EA;
+}
+.extraContact
+{
+  color: #D0F4EA;
+  text-align: center
+}
+.hvr-grow{vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform}.hvr-grow:active,.hvr-grow:focus,.hvr-grow:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}.hvr-shrink{display:inline-block;vertical-align:middle;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
     display: block;
-    height: 1px;
-    width: 90%;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: auto;
-    padding: 0;
-
-}
-.grid-container {
-    margin-top:10px;
-    margin-left:45px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap:2em;
-    grid-auto-rows: 150px;
-    width:150px;
-         
-    }
-
-  .grid-image {
-    border:1px black solid;  
-    padding: 1px;
-    font-size: 30px;
-    text-align: center;
   }
-  .grid-item a {
-      position: relative;
-      bottom:50px;
-      left:4px;
-      background-color:teal;
-      padding:10px 45px;
-      color:white;
-      
+  #portfolioHeader{
+    font-size:45px;
   }
- #portfolio {
-     background: white; 
-     padding-bottom: 30px;
- } 
+}
 
- input[type=text], select, textarea {
-    width: 100%; 
-    padding: 10px;  
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 5px; 
-    margin-bottom: 15px; 
-    resize: vertical 
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 
 
-input[type=submit] {
-    background-color: #4AAAA5;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+
+ul {
+  color: #84DCC6
 }
 
-input[type=submit]:hover {
-    background-color: rgb(40, 124, 120);
-}
-
-
-.container {
-    border-radius: 5px;
-    background-color: white;
-    padding: 20px;
+#testpallet {
+  color: #90A9B7;
+  color: #272727;
+  color: #D4AA7D;
+  color: #EFD09E;
+  color: #D2D8B3;
 }
