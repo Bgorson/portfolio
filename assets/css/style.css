@@ -92,6 +92,7 @@ body {
   max-width: 100%;
   height: auto;
   text-align: center;
+  margin-top:20px;
  
 }
 .roundedImage {
@@ -150,11 +151,13 @@ ul {
 
   display: flex;
   justify-content: center;
+  flex-wrap:wrap;
 }
 .badges{
   max-height: 100px;
   margin-top:1vw;
   margin-right:1vw;
+  border-radius: 25px;
 }
 #compHeader{
   text-align: center;
@@ -199,8 +202,7 @@ ul {
     text-align: left;
   }
   .badges{
-    max-height: 60px;
+    max-height: 80px;
   }
-
 }
 
