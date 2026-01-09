@@ -1,96 +1,215 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Brandon Gorson</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./assets/css/hover-min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandon Gorson | Senior AI Engineer & Full Stack Developer</title>
   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
-  <!-- nav bar with about, portfolio, contact info-->
-  <div id= "stickyBar">
-  <div class="topnav" id="myTopnav">
-      <a href="#splash" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-  </div>
-
-  <!-- jumbotron style image -->
-  <div class="aboutContainer">
-    <div id="splash"></div>
-    <div class="centeredText">Brandon Gorson</div>
-  </div>
-
-  <!-- content with about me section -->
-  <div id="about">
-    <div class="row">
-      <div class="column"><p>I am a full stack developer with knowledge primarily in Javascript, HTML and CSS. I'm currently
-        completing my education to gain a deeper understanding in a variety
-        of languages and technologies. I'm seeking employement to build your next project and make your ideas come to
-        life.
-      </br>
-      </br>On this page, you will find a variety of projects that I have completed as well as contact information.
-    I've spent the majority of my career as a professional counselor working closely with
-        traumatized populations in Chicago. 
-        I'm taking this new step in my life to pursue a passion of mine, technology. I'm always innovating and creating
-        and am ready to bring these interests and skills into a new field.
-        <br>
-        <br>
-        See my more detailed resume <a style="color:white"  class='links' href= "assets/resume.pdf" target="_blank">here</a>
-        </p>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-content">
+      <a href="#" class="nav-logo">BG</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
       </div>
-
     </div>
-    <p id = "compHeader"> I am competent in the following:</p>
-    <div id="competencies">
-      <img class= "badges" src="./assets/images/html.png">
-      <img class= "badges" src="./assets/images/js.png">
-      <img class= "badges" src="./assets/images/css.png">
-      <img class= "badges" src="./assets/images/bootstrap.png">
-      <img class= "badges" src="./assets/images/jquery.png">
-      <img class= "badges" src="./assets/images/firebase.png">
-      <img class= "badges" src="./assets/images/node.png">
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Senior AI Engineer</p>
+      <h1 class="hero-title">Brandon<br>Gorson</h1>
+      <p class="hero-subtitle">Building intelligent products that impact millions of users</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
     </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </header>
 
-  </div>
-  <!-- portfolio of projects -->
-<h2 id= "portfolioHeader" >PROJECTS</h2>
-  <div class="row" id="portfolio"> 
-    <div class="column responsiveImage hvr-grow"><a href = "https://bgorson.github.io/ProjectOne/" target="_blank"><img class= "roundedImage" src="./assets/images/venyou.jpg" alt="venyou" width="300" height="220"></a><p>VenYou</p><a class= "links" href= "https://github.com/Bgorson/ProjectOne">Source Code</a></div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="about-lead">Full Stack AI Developer with a unique background in Psychology and a life-long dedication to learning.</p>
+          <p>I effectively combine creativity and problem-solving skills to develop user-friendly products. Known among colleagues for strong collaboration and attention to detail no matter the complexity of the project.</p>
+          <p>Currently at <strong>Sprout Social</strong>, I lead the development of high-performance AI experiences, building features that have driven the highest customer engagement in the company's history.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Languages & Frameworks</h3>
+            <ul>
+              <li>TypeScript / JavaScript</li>
+              <li>React / Next.js</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>GraphQL</li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <ul>
+              <li>Node.js</li>
+              <li>SQL / NoSQL</li>
+              <li>Datadog</li>
+              <li>GitHub Actions</li>
+              <li>AWS Lambda</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="column responsiveImage hvr-grow"><a href ="https://bgorson.github.io/triviagameplus/" target="_blank"><img class= "roundedImage" src="./assets/images/starcraft.jpg" alt="starcraft" width="300" height="220"></a><p>StarCraft Trivia</p><a class= "links" href= "https://github.com/Bgorson/triviagameplus">Source Code</a></div>
+  <!-- Experience Section -->
+  <section class="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 — Present</div>
+          <div class="timeline-content">
+            <h3>Senior Engineer — AI/AI Experiences</h3>
+            <p class="timeline-company">Sprout Social</p>
+            <p>Leading development of AI features in a Full Stack capacity. Built features that drove the highest customer requests in company history. Collaborate with data scientists and designers to deliver impactful experiences.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>Associate Director of Engineering</h3>
+            <p class="timeline-company">Dentsu</p>
+            <p>Led two engineering teams building internal tools for resource allocation and cost forecasting across multiple countries.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2021 — 2022</div>
+          <div class="timeline-content">
+            <h3>Senior Software Engineer</h3>
+            <p class="timeline-company">Foxtrot</p>
+            <p>Team lead for front-end developers. Built national shipping platform resulting in 439% YoY growth.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2019 — 2021</div>
+          <div class="timeline-content">
+            <h3>Software Engineer</h3>
+            <p class="timeline-company">Catalytic</p>
+            <p>Implemented features and created abstract React components used across the entire application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div class="column responsiveImage hvr-grow"><a href = "https://bgorson.github.io/Giphy/" target="_blank"><img class= "roundedImage" src="./assets/images/arrested.jpg" alt="arrested" width="300" height="220"></a><p>Gifs</p><a class= "links" href= "https://github.com/Bgorson/Giphy">Source Code</a></div>
-    <div class="column responsiveImage hvr-grow"><a href = "https://bgorson.github.io/StarWarsRPG/" target="_blank"><img class= "roundedImage" src="./assets/images/starwars.jpg" alt="starwars" width="300" height="220"></a><p>Starwars RPG</p><a class= "links" href= "https://github.com/Bgorson/StarWarsRPG">Source Code</a></div>
+  <!-- Work Section -->
+  <section id="work" class="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2 class="section-title">Custom Websites</h2>
+      </div>
+      <p class="work-intro">I build custom, high-quality websites for professionals and businesses. Here are some recent projects:</p>
+      <div class="projects-grid">
+        <a href="https://belle4judge.com/" target="_blank" rel="noopener" class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <span>Visit Site →</span>
+            </div>
+            <div class="project-placeholder belle">
+              <span>Belle for Judge</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Belle for Judge</h3>
+            <p>Political campaign website for judicial candidate in Cook County's 20th Subcircuit</p>
+            <div class="project-tags">
+              <span>Campaign</span>
+              <span>Responsive</span>
+              <span>Custom Design</span>
+            </div>
+          </div>
+        </a>
+        <a href="http://rosewatterchicounseling.com/" target="_blank" rel="noopener" class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <span>Visit Site →</span>
+            </div>
+            <div class="project-placeholder counseling">
+              <span>Rosewatter Counseling</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Rosewatter Chicago Counseling</h3>
+            <p>Professional therapy practice website in Chicago</p>
+            <div class="project-tags">
+              <span>Healthcare</span>
+              <span>Professional</span>
+              <span>Custom Design</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="work-cta">
+        <p>Need a custom website for your business or campaign?</p>
+        <a href="#contact" class="btn btn-primary">Let's Talk</a>
+      </div>
+    </div>
+  </section>
 
-  </div>
- 
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-content">
+        <p class="contact-lead">Have a project in mind or just want to connect? I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:BGorson32@gmail.com" class="contact-link">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">BGorson32@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/brandon-gorson/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">linkedin.com/in/brandon-gorson</span>
+          </a>
+          <a href="https://github.com/Bgorson" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/Bgorson</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- contact info with links to differnet areas -->
-  <div id='contact'>
-    <div id="directContact">
-      <a href ="https://www.linkedin.com/in/brandon-gorson-74866b6b" target="_blank"><i class= "hvr-pulse-shrink fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href ="https://github.com/Bgorson" target="_blank"><i class="hvr-pulse-shrink fa fa-github" aria-hidden="true"></i></a>
-      <a href ="mailto:BGorson32@gmail.com"> <i class="hvr-pulse-shrink fa fa-envelope" aria-hidden="true"></i></a>
-      <a href="tel:1-847-977-3626"><i class="hvr-pulse-shrink fa fa-phone" aria-hidden="true"></i></a>
-          </div>   
-          <p class= "extraContact">1-847-977-3626</p>
-          <p class = "extraContact">BGorson32@gmail.com</p> 
-  </div>
-  <script src="./assets/javascript/javascript.js"></script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Brandon Gorson. Built with care.</p>
+    </div>
+  </footer>
 </body>
-
 </html>
